@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Практическая работа №7 — галерея изображений">
+    <title>Практическая работа №7 — галерея изображений</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+    <div class="container-fluid px-3 px-md-4 py-3">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-3 text-center text-md-left mb-2 mb-md-0">
+                <a href="#top" aria-label="На главную страницу">
+                    <span class="logo-mark" aria-hidden="true">WEB</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-9 text-center text-md-left">
+                <h1 class="h2 mb-0">Практическая работа №7</h1>
+                <p class="mb-0 text-muted">Разработка пользовательского Web-интерфейса</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light border-top border-bottom" aria-label="Главное меню">
+    <div class="container-fluid px-3 px-md-4">
+        <a class="navbar-brand font-weight-bold" href="#top">WEB</a>
+        <div class="navbar-collapse" id="mainNav">
+            <div class="navbar-nav ml-md-auto">
+                <a class="nav-item nav-link" href="#links">Ссылки</a>
+                <a class="nav-item nav-link" href="#table-section">Таблица</a>
+                <a class="nav-item nav-link" href="#gallery">Галерея</a>
+                <a class="nav-item nav-link" href="#calculator">Калькулятор услуги</a>
+                <a class="nav-item nav-link" href="#form">Форма</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid px-3 px-md-4 py-3 py-md-4">
+    <div class="row">
+        <aside class="col-12 col-md-3 order-1 order-md-1 mb-3 mb-md-0">
+            <div class="sidebar h-100 p-3">
+                <h2 class="h5 mb-3">Сайдбар</h2>
+                <nav aria-label="Навигация по странице">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#top">Главная</a></li>
+                        <li class="mb-2"><a href="#links">Список ссылок</a></li>
+                        <li class="mb-2"><a href="#table-section">Таблица</a></li>
+                        <li class="mb-2"><a href="#gallery">Галерея изображений</a></li>
+                        <li class="mb-2"><a href="#calculator">Калькулятор услуги</a></li>
+                        <li><a href="#form">Форма</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="col-12 col-md-9 order-2 order-md-2">
+            <section id="table-section" class="mb-4">
+                <h2 class="h3 mb-3">Таблица</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover mb-0">
+                        <caption>Таблица по практической работе</caption>
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Элемент</th>
+                            <th scope="col">Описание</th>
+                            <th scope="col">Статус</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>HTML</td>
+                            <td>Структура страницы</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Оформление страницы</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td colspan="2">Гиперссылки и навигация</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Изображение</td>
+                            <td>Изображение с активными областями</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Форма</td>
+                            <td>Поля для ввода данных</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Адаптивность</td>
+                            <td>Flex Box, Media Query и Bootstrap</td>
+                            <td>Выполнено</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="links" class="mb-4">
+                <h2 class="h3 mb-3">Список ссылок</h2>
+                <ol class="pl-4">
+                    <li><a href="//www.kubsu.ru">Абсолютная ссылка на главную сайта kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru">Абсолютная ссылка на kubsu.ru (https)</a></li>
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru">
+                            <img class="img-fluid link-image" src="https://avatars.mds.yandex.net/i?id=e73851f607546eafba9b3a4bf8f69805_l-9153855-images-thumbs&n=13" alt="Ссылка-изображение на kubsu.ru">
+                        </a>
+                    </li>
+                    <li><a href="/index.php">Сокращённая ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">Сокращённая ссылка на главную страницу</a></li>
+                    <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="https://example.com/search?q=html&amp;lang=ru&amp;page=1">Ссылка с тремя параметрами</a></li>
+                    <li><a href="https://example.com/user?id=12345">Ссылка с параметром</a></li>
+                    <li><a href="page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="about/index.html">Относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="../parent.html">Относительная ссылка на уровень выше</a></li>
+                    <li><a href="../../grandparent.html">Относительная ссылка на два уровня выше</a></li>
+                    <li>Контекстная ссылка: узнайте больше о <a href="https://kubsu.ru/education">образовании в КубГУ</a>.</li>
+                    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a#attributes">Ссылка на фрагмент страницы</a></li>
+                    <li>
+                        <img class="img-fluid map-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmOm--1aVCifxKbVBSrqzlV24T4bURpUlbUZw6yt5V0A&s=10" alt="Image map" usemap="#example-map">
+                        <map name="example-map">
+                            <area shape="rect" coords="0,0,150,150" href="https://kubsu.ru" alt="Прямоугольник на kubsu.ru">
+                            <area shape="circle" coords="225,75,50" href="https://example.com" alt="Круг на example.com">
+                        </map>
+                    </li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a>Ссылка без href (неактивная)</a></li>
+                    <li><a href="https://example.com/nofollow" rel="nofollow">Ссылка с rel="nofollow"</a></li>
+                    <li><a href="noindex-page.html" rel="noindex">Ссылка на страницу с noindex</a></li>
+                    <li>
+                        <span>Нумерованный список ссылок с подписями title:</span>
+                        <ol class="mt-2">
+                            <li><a href="https://kubsu.ru" title="Главная страница КубГУ">КубГУ — главная</a></li>
+                            <li><a href="https://kubsu.ru/education" title="Образовательные программы КубГУ">КубГУ — образование</a></li>
+                            <li><a href="https://kubsu.ru/science" title="Наука в КубГУ">КубГУ — наука</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://user:password@ftp.example.com/file.zip">FTP-ссылка с авторизацией</a></li>
+                </ol>
+            </section>
+
+            <section id="gallery" class="mb-4" aria-labelledby="gallery-title">
+                <h2 id="gallery-title" class="h3 mb-3">Галерея изображений</h2>
+                <p>Листайте галерею стрелками. На большом экране показываются три изображения, на смартфоне — одно.</p>
+                <div class="image-gallery" aria-label="Слайдер из восьми изображений">
+                    <button class="gallery-arrow gallery-prev" type="button" aria-label="Предыдущая страница" disabled>
+                        <span aria-hidden="true">&#10094;</span>
+                    </button>
+                    <div class="gallery-viewport" id="gallery-viewport">
+                        <div class="gallery-track" id="gallery-track">
+                            <figure class="gallery-item"><img src="images/photo-1.svg" alt="Горные вершины" width="640" height="420"><figcaption>Горные вершины</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-2.svg" alt="Морское побережье" width="640" height="420"><figcaption>Морское побережье</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-3.svg" alt="Лесная тропа" width="640" height="420"><figcaption>Лесная тропа</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-4.svg" alt="Закат над озером" width="640" height="420"><figcaption>Закат над озером</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-5.svg" alt="Зелёные холмы" width="640" height="420"><figcaption>Зелёные холмы</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-6.svg" alt="Зимний пейзаж" width="640" height="420"><figcaption>Зимний пейзаж</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-7.svg" alt="Пустынные дюны" width="640" height="420"><figcaption>Пустынные дюны</figcaption></figure>
+                            <figure class="gallery-item"><img src="images/photo-8.svg" alt="Цветочное поле" width="640" height="420"><figcaption>Цветочное поле</figcaption></figure>
+                        </div>
+                    </div>
+                    <button class="gallery-arrow gallery-next" type="button" aria-label="Следующая страница">
+                        <span aria-hidden="true">&#10095;</span>
+                    </button>
+                </div>
+                <nav class="gallery-pager" aria-label="Страницы галереи">
+                    <span id="gallery-page-status" aria-live="polite">Страница 1 из 3</span>
+                    <div id="gallery-page-buttons" class="gallery-page-buttons"></div>
+                </nav>
+            </section>
+
+            <section id="calculator" class="mb-4">
+                <h2 class="h3 mb-3">Калькулятор стоимости услуги</h2>
+                <p>Выберите тип услуги, укажите количество и дополнительные параметры. Стоимость пересчитывается автоматически без перезагрузки страницы.</p>
+
+                <form id="service-calculator">
+                    <fieldset class="form-group">
+                        <legend class="col-form-label pt-0">Тип услуги:</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="service-basic" name="serviceType" value="basic" checked>
+                            <label class="form-check-label" for="service-basic">Базовая услуга — 100 ₽ за единицу</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="service-standard" name="serviceType" value="standard">
+                            <label class="form-check-label" for="service-standard">Стандартная услуга — 200 ₽ за единицу</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="service-premium" name="serviceType" value="premium">
+                            <label class="form-check-label" for="service-premium">Расширенная услуга — 150 ₽ за единицу</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="quantity">Количество:</label>
+                        <input class="form-control" type="number" id="quantity" name="quantity" min="1" step="1" value="1" required>
+                        <small class="form-text text-muted">Введите положительное целое число.</small>
+                    </div>
+
+                    <div class="form-group" id="option-group" hidden>
+                        <label for="service-option">Дополнительная опция (для стандартной услуги):</label>
+                        <select class="form-control" id="service-option" name="serviceOption">
+                            <option value="none" data-price="0">Без дополнительной опции — 0 ₽</option>
+                            <option value="fast" data-price="50">Срочное выполнение — 50 ₽ за единицу</option>
+                            <option value="extended" data-price="80">Расширенный результат — 80 ₽ за единицу</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-check" id="property-group" hidden>
+                        <input class="form-check-input" type="checkbox" id="extra-property" name="extraProperty">
+                        <label class="form-check-label" for="extra-property">Дополнительное свойство ( + 40 ₽ за единицу)</label>
+                    </div>
+
+                    <p id="calculator-error" class="text-danger mt-3 mb-0" role="alert" aria-live="polite"></p>
+                    <div id="calculator-result" class="alert alert-success mt-3 mb-0" role="status" aria-live="polite">Итоговая стоимость: 100 ₽</div>
+                </form>
+            </section>
+
+            <section id="form">
+                <h2 class="h3 mb-3">Форма</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="fullname">ФИО:</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthdate">Дата рождения:</label>
+                        <input type="date" class="form-control" id="birthdate" name="birthdate">
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend class="col-form-label pt-0">Пол:</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+                            <label class="form-check-label" for="male">Мужской</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="female">Женский</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="languages">Любимый язык программирования (можно выбрать несколько):</label>
+                        <select class="form-control" id="languages" name="languages[]" multiple size="8">
+                            <option value="pascal">Pascal</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskell">Haskell</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Биография:</label>
+                        <textarea class="form-control" id="bio" name="bio" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="contract" name="contract" value="yes">
+                        <label class="form-check-label" for="contract">С контрактом ознакомлен(а)</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer border-top mt-2">
+    <div class="container-fluid px-3 px-md-4 py-3">
+        <p class="mb-0">(с) Сергей Синица 2025</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script src="gallery.js" defer></script>
+</body>
+</html>

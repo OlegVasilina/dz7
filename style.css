@@ -1,0 +1,193 @@
+/* Практическая работа №6. Bootstrap + Mobile First. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+    background: #fff;
+    line-height: 1.5;
+}
+
+.site-header {
+    background: #e8e8e8;
+}
+
+.logo-mark {
+    display: inline-flex;
+    width: 96px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #343a40;
+    border-radius: 8px;
+    color: #343a40;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: #fff;
+}
+
+.sidebar {
+    background: #f1f1f1;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.link-image,
+.map-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.link-image {
+    width: 550px;
+}
+
+.map-image {
+    width: 450px;
+}
+
+.site-footer {
+    background: #f8f9fa;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky;
+        top: 1rem;
+    }
+}
+
+/* Калькулятор стоимости услуги. */
+#service-calculator {
+    max-width: 760px;
+    padding: 1rem;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.25rem;
+    background: #fff;
+}
+
+#calculator-result {
+    font-weight: 700;
+}
+
+#calculator-error:empty {
+    display: none;
+}
+
+
+/* Галерея изображений: адаптивный слайдер и пейджер. */
+.image-gallery {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.gallery-viewport {
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    align-items: stretch;
+    transition: transform 300ms ease;
+    will-change: transform;
+}
+
+.gallery-item {
+    flex: 0 0 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0.35rem;
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 0.35rem;
+    border: 1px solid #d0d0d0;
+}
+
+.gallery-item figcaption {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gallery-arrow {
+    flex: 0 0 2.25rem;
+    width: 2.25rem;
+    height: 2.75rem;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25rem;
+    background: #f8f9fa;
+    color: #212529;
+    cursor: pointer;
+}
+
+.gallery-arrow:hover:not(:disabled),
+.gallery-arrow:focus-visible {
+    background: #e2e6ea;
+}
+
+.gallery-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.gallery-pager {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.gallery-page-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+}
+
+.gallery-page-button {
+    min-width: 2.25rem;
+    padding: 0.25rem 0.55rem;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: #212529;
+}
+
+.gallery-page-button[aria-current="page"] {
+    background: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .gallery-item {
+        flex-basis: 33.333333%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-track {
+        transition: none;
+    }
+}

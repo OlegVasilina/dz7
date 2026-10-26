@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="Цветочное поле">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4e9fa"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<rect width="640" height="420" fill="url(#sky)"/><circle cx="500" cy="88" r="38" fill="#fff1b7" opacity=".95"/>
+<path d="M0 280 L135 90 L260 275 L365 125 L535 290 L640 205 L640 420 L0 420Z" fill="#6eae72"/>
+<path d="M0 330 Q150 230 300 320 T640 290 L640 420 L0 420Z" fill="#4d8d58"/>
+<path d="M0 365 Q150 315 300 365 T640 350 L640 420 L0 420Z" fill="#6eae72" opacity=".8"/>
+<g fill="#ffffff" opacity=".75"><ellipse cx="120" cy="72" rx="42" ry="13"/><ellipse cx="150" cy="70" rx="32" ry="18"/><ellipse cx="182" cy="75" rx="30" ry="12"/></g>
+<path d="M0 400 Q130 380 250 402 T500 398 T640 390" stroke="#ffffff" stroke-width="4" fill="none" opacity=".45"/>
+<text x="24" y="390" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" stroke="#243746" stroke-width=".5">Цветочное поле</text></svg>
